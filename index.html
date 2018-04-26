@@ -27,7 +27,7 @@
       <div class="title">Russian Train Tickets</div>
       <form action="">
         <div class="city-selection">
-          
+
           <div class="city">
             <label for="depatrure-city">Departure city:</label>
             <input type="text" name="" id="departure-city" placeholder="Type city name">
@@ -43,26 +43,42 @@
           </div>
 
           <div class="city">
-              <label for="arrival-city">Arrival city:</label>
-              <input type="text" name="" id="arrival-city" placeholder="Type city name">
-              <ul class="example">
-                <li>St. Peterburg</li>
-                <li>Moscow</li>
-                <li>Perm</li>
-              </ul>
-            </div>
+            <label for="arrival-city">Arrival city:</label>
+            <input type="text" name="" id="arrival-city" placeholder="Type city name">
+            <ul class="example">
+              <li>St. Peterburg</li>
+              <li>Moscow</li>
+              <li>Perm</li>
+            </ul>
+          </div>
 
         </div>
         <div class="date-selection">
-          <div class="date">
 
+          <div class="date">
+            <label for="departure-date">Departure date:</label>
+            <input type="date" name="" id="departure-date">
           </div>
 
           <div class="date">
-
-          </div>
+              <label for="return-date">Return date:</label>
+              <input type="date" name="" id="arrival-date">
+            </div>
 
         </div>
+        <div class="currency-selection">
+          <label for="currency">Currency</label>
+          <select name="" id="currency">
+            <option value="usd">USD</option>
+            <option value="rub">RUB</option>
+            <option value="gbr">GBR</option>
+            <option value="eur">EUR</option>
+            <option value="chf">CHF</option>
+          </select>
+        </div>
+        <div class="search-button">
+          <button type="button">* Search</button>
+      </div>
       </form>
     </div>
   </div>

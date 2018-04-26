@@ -70,6 +70,22 @@ body {
   /* width: 200px; */
 }
 
+label {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+input {
+  font-size: 0.9em;
+  width: 90%;
+  padding: 1em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .city input {
   font-size: 0.9em;
   width: 90%;
@@ -138,6 +154,31 @@ body {
   cursor: pointer;
 }
 
+.date {
+  width: 20%;
+}
+
+.currency-selection {
+  width: 12%;
+}
+
+.currency-selection select {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.7em;
+  font-size: 1em;
+}
+
+.currency-selection select option {
+  font-size: 1em;
+}
+
+.currency-selection select option:hover {
+  background-color: #bfd8eb
+}
+
 @media screen and (max-width: 700px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -149,6 +190,22 @@ body {
   .sing-in {
     float: right;
   }
+}
+
+.search-button {
+  width: 20%;
+}
+
+.search-button button {
+  /* background-color: #f75c00; */
+  background: linear-gradient(#fcc272 ,#f76004);
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 1em;
+  color: white;
+  font-weight: light;
+  padding: 0.8em 0;
 }
 
 @media screen and (max-width: 700px) {
