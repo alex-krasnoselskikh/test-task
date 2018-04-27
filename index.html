@@ -18,7 +18,7 @@
       <a href="#">faq &#9660;</a>
       <a href="#">tickets guide &#9660;</a>
       <a href="#">contact us &#9660;</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
       <div class="sign-in">
         <a href="#">* Sing in</a>
       </div>
@@ -60,10 +60,17 @@
             <input type="date" name="" id="departure-date">
           </div>
 
+          <div class="roundtrip">
+            <label for="is-roundtrip" class="container">Roundtrip
+              <input type="checkbox" name="" id="is-roundtrip">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
           <div class="date">
-              <label for="return-date">Return date:</label>
-              <input type="date" name="" id="arrival-date">
-            </div>
+            <label for="return-date">Return date:</label>
+            <input type="date" name="" id="arrival-date">
+          </div>
 
         </div>
         <div class="currency-selection">
@@ -78,12 +85,12 @@
         </div>
         <div class="search-button">
           <button type="button">* Search</button>
-      </div>
+        </div>
       </form>
     </div>
   </div>
   <script>
-    function myFunction() {
+    function toggleMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
         x.className += " expanded";
