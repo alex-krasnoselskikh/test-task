@@ -7,7 +7,7 @@ body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu {
-  background-color: #54add8'
+  background-color: #54add8;
 }
 
 .search {
@@ -185,17 +185,19 @@ imput[type=checkbox] {
   padding: 0.5em;
   height: 50%;
   border-radius: 6px;
-  margin: 1em;
+  /* margin: 1em; */
+  margin: auto 1em;
   position: relative;
+  top: 0.7em;
 }
 
 .roundtrip::after {
   content: ''; 
   position: absolute;
   left: 100%;
-  top: 33%;
-  border: 5px solid transparent;
-  border-left: 9px solid #0b92d2;
+  top: 30%;
+  border: 7px solid transparent;
+  border-left: 6px solid #0b92d2;
   margin: 0;
 }
 
@@ -226,7 +228,7 @@ imput[type=checkbox] {
   position: absolute;
   top: 2px;
   left: 0;
-  height: 0.9em;
+  height: 1em;
   width: 1em;
   background-color: white;
   border-radius: 3px;
@@ -262,7 +264,7 @@ imput[type=checkbox] {
   width: 4px;
   height: 7px;
   border: solid #0085c5;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
