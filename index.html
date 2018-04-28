@@ -11,92 +11,106 @@
 
 <body>
   <div class="layout">
+
     <div class="topnav" id="myTopnav">
-      <a href="#" class="active">search tickets</a>
-      <a href="#">sapsan</a>
-      <a href="#">allegro &#9660;</a>
-      <a href="#">faq &#9660;</a>
-      <a href="#">tickets guide &#9660;</a>
-      <a href="#">contact us &#9660;</a>
-      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
-      <div class="sign-in">
-        <a href="#">* Sing in</a>
+      <div class="row">
+        <a href="#" class="active">search tickets</a>
+        <a href="#">sapsan</a>
+        <a href="#">allegro &#9660;</a>
+        <a href="#">faq &#9660;</a>
+        <div class="dropdown">
+          <button class="dropbtn">tickets guide &#9660;</button>
+          <div class="dropdown-content">
+            <a href="#">Group travel</a>
+            <a href="#">Ticket types</a>
+            <a href="#">Child policy</a>
+            <a href="#">Change ticket request</a>
+            <a href="#">Cancel tickets</a>
+          </div>
+        </div>
+        <a href="#">contact us &#9660;</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+        <div class="sign-in">
+          <a href="#">* Sing in</a>
+        </div>
       </div>
     </div>
+
     <div class="search">
-      <div class="title">Russian Train Tickets</div>
-      <form action="">
-        <div class="city-selection">
+      <div class="row">
+        <div class="title">Russian Train Tickets</div>
+        <form action="">
+          <div class="city-selection">
 
-          <div class="city">
-            <label for="depatrure-city">Departure city:</label>
-            <input type="text" name="" id="departure-city" placeholder="Type city name">
-            <ul class="example">
-              <li>St. Peterburg</li>
-              <li>Moscow</li>
-            </ul>
+            <div class="city">
+              <label for="depatrure-city">Departure city:</label>
+              <input type="text" name="" id="departure-city" placeholder="Type city name">
+              <ul class="example">
+                <li>St. Peterburg</li>
+                <li>Moscow</li>
+              </ul>
+            </div>
+
+            <div class="swap">
+              <button type="button">&#x21C4;</button>
+            </div>
+
+            <div class="city">
+              <label for="arrival-city">Arrival city:</label>
+              <input type="text" name="" id="arrival-city" placeholder="Type city name">
+              <ul class="example">
+                <li>St. Peterburg</li>
+                <li>Moscow</li>
+              </ul>
+            </div>
+
           </div>
+          <div class="date-selection">
 
-          <div class="swap">
-            <button type="button">&#x21C4;</button>
+            <div class="date">
+              <label for="departure-date">Departure date:</label>
+              <input type="date" name="" id="departure-date">
+            </div>
+
+            <div class="roundtrip">
+              <label for="is-roundtrip" class="container">Roundtrip
+                <input type="checkbox" name="" id="is-roundtrip">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="date return-date">
+              <label for="return-date">Return date:</label>
+              <input type="date" name="" id="arrival-date">
+            </div>
+
           </div>
-
-          <div class="city">
-            <label for="arrival-city">Arrival city:</label>
-            <input type="text" name="" id="arrival-city" placeholder="Type city name">
-            <ul class="example">
-              <li>St. Peterburg</li>
-              <li>Moscow</li>
-            </ul>
+          <div class="currency-selection">
+            <label for="currency">Currency</label>
+            <select name="" id="currency">
+              <option value="usd">USD</option>
+              <option value="rub">RUB</option>
+              <option value="gbr">GBR</option>
+              <option value="eur">EUR</option>
+              <option value="chf">CHF</option>
+            </select>
           </div>
-
-        </div>
-        <div class="date-selection">
-
-          <div class="date">
-            <label for="departure-date">Departure date:</label>
-            <input type="date" name="" id="departure-date">
+          <div class="search-button">
+            <button type="button">* Search</button>
           </div>
-
-          <div class="roundtrip">
-            <label for="is-roundtrip" class="container">Roundtrip
-              <input type="checkbox" name="" id="is-roundtrip">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-
-          <div class="date return-date">
-            <label for="return-date">Return date:</label>
-            <input type="date" name="" id="arrival-date">
-          </div>
-
-        </div>
-        <div class="currency-selection">
-          <label for="currency">Currency</label>
-          <select name="" id="currency">
-            <option value="usd">USD</option>
-            <option value="rub">RUB</option>
-            <option value="gbr">GBR</option>
-            <option value="eur">EUR</option>
-            <option value="chf">CHF</option>
-          </select>
-        </div>
-        <div class="search-button">
-          <button type="button">* Search</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-  <script>
-    function toggleMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " expanded";
-      } else {
-        x.className = "topnav";
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " expanded";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
 </body>
 
 </html>
